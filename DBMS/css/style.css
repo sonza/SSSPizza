@@ -1,0 +1,238 @@
+body{
+	background-color: #FF6800; /*Orange*/
+	font-size: 16px;
+	color: #000; /* Black */
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+*{
+	box-sizing: border-box;
+}
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding: 0;
+}
+
+
+
+/*Header*/
+ #header-nav{
+	background-color: #FFA261;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 5px;
+ }
+
+ #logo-img{
+	background: url("../Images/sssl.png") no-repeat;
+	width: 100px;
+	height: 100px;
+ }
+
+ #brand h1{
+	color: #FF6800; /*Orange*/
+	border: 1px solid-black;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
+	line-height: 0.75;
+ }
+
+ .navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+ } 
+
+ #nav-list {
+	margin-top: 30px;
+	float: right !important;
+	margin-right: 0px;
+	list-style: none;
+	width: 400px;
+	font-size: 1.1em;
+ }
+
+ #nav-list li{
+	position: relative;
+	display: block;
+	float: left;
+ }
+
+ #nav-list li a{
+	padding: 10px;
+	line-height: 20px;
+	text-align: center;
+	color: black;
+ }
+ #nav-list li a:hover, #nav-list li a:focus{
+	text-decoration: none;
+	font-style: italic;
+	font-weight: bolder;
+	background-color: #FF6800;
+	/*font-size: 1.2em;*/
+ }
+ #log-btn{
+	background-color: #FF6800;
+	border-color: #FF9800;
+ }
+ #log-btn a{
+	color: white;
+ }
+ #log-btn a:hover, #log-btn a:focus{
+	text-decoration: none;
+ }
+/*End of Header*/
+
+
+
+/*Main Content*/
+ #main{
+	background-color: #FFA261;
+	text-align: center;
+	/*font-weight: bold;*/
+	margin-bottom: 5px;
+ }
+
+ #pillss{
+	background-color: #FF8837;
+ }
+ #pillss a{
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 1.5em;
+ }
+ #pillss a:hover, #pills a:focus{
+	background-color: #FF6800;
+ }
+ #pillss li.active a{
+	background-color: #FF6800;
+ }
+ 
+ #hrr{
+	border-top: 2px solid black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 90%;
+ }
+
+ #pizza section h3{
+	height: 50px;
+ }
+
+ .category-tile{
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+ }
+ .category-tile img{
+	width: 200px;
+	height: 200px;
+ }
+ .category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	top: 165px;
+	padding:7.5px 6.5px 7.5px 7.5px;
+	background-color: #000;
+	color:#fff;
+	opacity: 0.8;
+ }
+ .category-tile:hover{
+	box-shadow: 1px 2px 6px 2px #FF6800;
+ }
+
+ .nav-tabs{
+	border-bottom: 1px solid #000;
+	margin-left: 15px;
+ }
+ .nav-tabs li a {
+    color: #000;
+ }
+ .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #000;
+    background-color: #FF6800;
+    border: 1px solid #000;
+ }
+ .nav-tabs>li>a:hover {
+    background-color: #FF8837;
+    border: 1px solid #000;
+ }
+ 
+ #out-btn{
+	background-color: #FF6800;
+	border-color: #FF9800;
+	margin-right: 40px;
+	margin-top: 7px;
+ }
+ #out-btn a{
+	color: white;
+ }
+ #out-btn a:hover, #log-btn a:focus{
+	text-decoration: none;
+ }
+/*End of Main Content*/
+
+
+
+/*Footer*/
+ #footerr{
+	text-align: center;
+	background-color: #FFA261;
+	border: 0;
+ }
+
+ #footerr p{
+	color: black;
+ }
+ .size{
+	position: relative;
+ 	min-height: 1px;
+  	padding-right: 15px;
+  	padding-left: 15px;
+  	float: left;
+  	width: 50%;
+ }
+/*End of Footer*/
+
+@media (max-width: 1099px){
+	body{
+		width: 100%;
+	}
+	#main{
+
+	}
+}
+@media (max-width: 1270px) and (min-width: 890px){
+	#pizza section{
+		position: relative;
+  		min-height: 1px;
+  		padding-right: 15px;
+  		padding-left: 15px;
+  		float: left;
+  		width: 33.33333333%;
+	}
+}
+@media (max-width: 889px) and (min-width: 590px){
+	#pizza section{
+		position: relative;
+  		min-height: 1px;
+  		padding-right: 15px;
+  		padding-left: 15px;
+  		float: left;
+  		width: 50%;
+	}
+}
+
+@media (max-width: 650px){
+	#nav-list{
+		clear: left;
+		padding: 0;
+		width: 380px;
+	}
+}
